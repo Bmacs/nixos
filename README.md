@@ -1,5 +1,5 @@
 # Clone your config
-git clone https://github.com/Bmacs/nixos.git
+git clone https://github.com/Bmacs/nixos.git  
 cd nixos
 
 # Generate hardware config for their machine
