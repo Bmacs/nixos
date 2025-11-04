@@ -1,0 +1,23 @@
+{ config, pkgs, ... }:
+{
+    imports = [
+        ./hardware-configuration.nix
+        ./modules/common.nix
+        ./modules/desktop/gnome.nix
+        ./modules/services/jenkins.nix
+        ./modules/services/ssh.nix
+        ./modules/users/bmacs.nix
+        ./modules/packages/packages.nix
+        ./modules/packages/steam.nix
+    ];
+
+    # Host-specific settings
+    networking.hostName = "nixos-desktop";
+    time.timeZone = "America/New_York";
+    system.stateVersion = "25.05";
+
+    # Bootloader
+    boot.loader.systemd-boot.enable = true;
+    boot.loader.efi.canTouchEfiVariables = true;
+}
+
