@@ -9,30 +9,32 @@
     # System-wide packages
     environment.systemPackages = with pkgs; [
         # CLI essentials
-        fastfetch
-        neovim
-        zsh
+	nodejs
+	pciutils
+	spotify
+	syncthing
+	usbutils
         curl
+        fastfetch
         fzf
-        git
         ghostty
+        git
         htop
         jq
         lsd
-	spotify
-	syncthing
+        neovim
         tmux
         tree
-	pciutils
-	usbutils
         unzip
         vim
         wget
-        zip
         zellij
+        zip
+        zsh
 
         # Desktop apps
         gnome-tweaks
+	obsidian
         vlc
 	vivaldi
         gimp

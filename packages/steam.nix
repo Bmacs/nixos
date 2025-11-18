@@ -35,6 +35,8 @@
         
         # Controller support
         antimicrox       # Controller to keyboard/mouse mapping
+	jstest-gtk
+	evtest
         
         # Wine for Windows games (optional)
         # wineWowPackages.stable
@@ -53,6 +55,12 @@
         pulse.enable = true;
         jack.enable = true;  # Enable JACK for low-latency audio
     };
+
+    services.udev.packages = with pkgs; [
+        steam
+        game-devices-udev-rules  # Extra controller support
+    ];
+
 
     # Kernel parameters for gaming performance (optional)
     # boot.kernel.sysctl = {

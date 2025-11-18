@@ -3,7 +3,7 @@
     users.users.bmacs = {
         isNormalUser = true;
         description = "bmacs";
-        extraGroups = [ "networkmanager" "wheel" "gamemode"];
+        extraGroups = [ "networkmanager" "wheel" "gamemode" "input" "plugdev"];
         packages = with pkgs; [
             # thunderbird  # example — uncomment to install for this user only
         ];

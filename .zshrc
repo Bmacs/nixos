@@ -81,6 +81,8 @@ source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
+export EDITOR=nvim
+
 # Load zinit extensions
 zinit light-mode for \
     zdharma-continuum/zinit-annex-as-monitor \

@@ -17,6 +17,11 @@
         LC_TIME = "en_US.UTF-8";
     };
 
+    # Crontab
+    services.cron.enable = true;
+
+	
+
     # Printing
     services.printing.enable = true;
 
